@@ -8,7 +8,11 @@ void main() {
     
     v_vTexcoord = in_TextureCoord;
 }
-//######################_==_YOYO_SHADER_MARKER_==_######################@~varying vec2 v_vTexcoord;
+//######################_==_YOYO_SHADER_MARKER_==_######################@~/*
+    Based on the research paper "Simple and Fast Fluids" by Martin Guay, Fabrice Colin, and Richard Egli from 2011.
+*/
+
+varying vec2 v_vTexcoord;
 
 uniform vec2 texel_size;
 vec2 velocity_factor = texel_size * 50.0;

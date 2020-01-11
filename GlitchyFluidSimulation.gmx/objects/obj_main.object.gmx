@@ -59,9 +59,7 @@ sf_temporary = -1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check_pressed(vk_escape)) game_end();
-
-if (!surface_exists(sf_effect)) {
+            <string>if (!surface_exists(sf_effect)) {
     sf_effect = surface_create(sf_effect_width, sf_effect_height);
     surface_set_target(sf_effect); draw_clear($008080); surface_reset_target();
 }
@@ -112,7 +110,7 @@ switch (effect) {
 
 }
 
-draw_text(10, 10, "Click to add fluid#Hold &lt;Space&gt; for 20x speed#fps: " + string(fps));
+draw_text(10, 10, "Click and drag to add fluid#Hold &lt;Space&gt; for 20x speed#FPS: " + string(fps));
 
 mouse_x_previous = mouse_x; mouse_y_previous = mouse_y;
 </string>
